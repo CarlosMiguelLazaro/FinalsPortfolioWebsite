@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+	<link rel="icon" href="eldegoss.png">
+</head>
+<body>
+    <div class="picFull" id="picFullBg">
+        <img src="ability shield-edited.png" id="picFullImg">
+        <span onclick="closePicFull()">x</span>
+    </div>
+    <div class="picBigFull" id="picBigFullBg">
+        <img src="dsa poster.png" id="picBigFullImg">
+        <span onclick="closeBigPicFull()">x</span>
+    </div>
+    <div>
+	<a class="ribbon" href="about.html">About</a>
+	<a class="ribbon" href="contact.html">Contact</a>
+	<a class="ribbon" href="portfolio.html">Portfolio</a>
+	<a class="ribbon" href="home.html">Home</a>
+	<table>
+		<tr>
+			<td style="width:30px"></td>
+			<td class="name1">Carlos</td>
+			<td class="name2"><b>Lazaro</b></td>
+		</tr>
+	</table>	
+    </div>
+    <div class="text-container">
+        <p class="text1">Here is a catalogue of my works!</p>
+    </div>
+    <div class="gallery">
+        <img class="poster" onclick="openPicFull(this.src)" src="ability shield-edited.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="absorb bulb.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="amulet coin.png">
+    </div>
+    <div class="gallery">
+        <img class="poster" onclick="openPicFull(this.src)" src="cell battery.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="destiny knot-altered-again.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="eject button.png">
+    </div>
+    <div class="gallery">
+        <img class="poster" onclick="openPicFull(this.src)" src="flame orb-HQ.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="focus sash draft 4.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="life orb-HQ.png">
+    </div>
+    <div class="gallery">
+        <img class="poster" onclick="openPicFull(this.src)" src="loaded dice.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="room service.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="toxic orb.png">
+    </div>
+    <div class="gallery">
+        <img class="poster" onclick="openPicFull(this.src)" src="tatsugiri.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="delibird-textless.png">
+        <img class="poster" onclick="openPicFull(this.src)" src="shk.png">
+    </div>
+    <div class="gallery">
+        <img class="big-poster" onclick="openBigPicFull(this.src)" src="dsa poster.png">
+    </div>
+    <script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>

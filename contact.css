@@ -1,0 +1,108 @@
+body{
+	margin:0;
+	background-color: rgb(4, 0, 16);
+	height: 100%;
+	width: 100%;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-image: url(lilligant.png);
+    background-position-x: -60px;
+    background-position-y: 80%;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+table {
+	background-color: rgb(4, 0, 16);
+	color: black;
+	border: none;
+	height: 72px;
+	width: 52%;
+	float:right;
+	top:0px;
+}
+.name1 {
+	font-size: 30pt;
+	font-family: gothambook;
+	width:20px;
+	color: rgba(210,201,255,255);
+}
+.name2 {
+	font-size: 30pt;
+	font-family: gothammedium;
+	color: rgba(125,80,226,255);
+}
+.ribbon{
+	background-color: rgb(4, 0, 16);
+	border: none;
+	height: 72px;
+	width: 12%;
+	color: rgba(210,201,255,255);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:center;
+	line-height: 72px;
+	text-decoration: none; 
+	cursor: pointer;
+	float: right;	
+	display:block;
+	transition: height 0.25s, color 0.25s;	
+}
+.ribbon:hover { 
+	height: 66px;
+	color: rgba(125,80,226,255);
+	transition: height 0.25s, color 0.25s;
+	text-decoration: none; 	
+}
+.content {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    color: rgba(210,201,255,255);
+    font-family: gothambook;
+    font-size: 20pt;    
+    text-align:center;
+    width:50%;
+    margin-top:2.5%;
+}
+.links {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(4, 0, 16);
+    font-family: gothambook;
+    font-size: 20pt;    
+    background-color: rgba(210,201,255,255);
+    text-align:left;
+    width:40%;
+    margin-top:1%;
+    padding: 1%;
+}
+.links img {
+    max-width:15%
+}
+.links a {
+    padding-left:5%;
+    text-decoration: none;
+    color: rgb(4, 0, 16);
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('gotham-medium-webfont.woff2') format('woff2'),
+         url('gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('gotham-book-webfont.woff2') format('woff2'),
+         url('gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

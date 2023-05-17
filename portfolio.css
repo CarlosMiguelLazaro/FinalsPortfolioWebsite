@@ -1,0 +1,150 @@
+body{
+	margin:0;
+	background-color: rgb(4, 0, 16);
+	height: 100%;
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+table {
+	background-color: rgb(4, 0, 16);
+	color: black;
+	border: none;
+	height: 72px;
+	width: 52%;
+	float:right;
+	top:0px;
+}
+.name1 {
+	font-size: 30pt;
+	font-family: gothambook;
+	width:20px;
+	color: rgba(210,201,255,255);
+}
+.name2 {
+	font-size: 30pt;
+	font-family: gothammedium;
+	color: rgba(125,80,226,255);
+}
+.ribbon{
+	background-color: rgb(4, 0, 16);
+	border: none;
+	height: 72px;
+	width: 12%;
+	color: rgba(210,201,255,255);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:center;
+	line-height: 72px;
+	text-decoration: none; 
+	cursor: pointer;
+	float: right;	
+	display:block;
+	transition: height 0.25s, color 0.25s;	
+}
+.ribbon:hover { 
+	height: 66px;
+	color: rgba(125,80,226,255);
+	transition: height 0.25s, color 0.25s;
+	text-decoration: none; 	
+}
+.text-container {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.text1 {
+    color: rgba(210,201,255,255);
+    font-family: gothambook;
+    font-size: 20pt;    
+    text-align:center;
+}
+.gallery {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2.5%;
+    padding-bottom: 2.5%;
+}
+.poster {
+    max-width: 20%;
+    transition:border-radius 0.25s;
+    cursor: pointer;
+}
+.big-poster {
+    max-width: 65%;
+    transition:border-radius 0.25s;
+    cursor: pointer;
+}
+.gallery img:hover{
+	border-radius:30px;
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('gotham-medium-webfont.woff2') format('woff2'),
+         url('gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('gotham-book-webfont.woff2') format('woff2'),
+         url('gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.picFull{
+	width:100%;
+	height:100vh;
+	background: rgba(15, 1, 61, 0.8);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	z-index:1;
+}
+.picBigFull{
+	width:100%;
+	height:100vh;
+	background: rgba(15, 1, 61, 0.8);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	z-index:1;
+}
+.picFull img{
+	width:50%;
+	max-width:450px;
+}
+.picBigFull img{
+	width:80%;
+}
+.picFull span{
+	cursor:pointer;
+	color:rgb(240, 255, 240);
+	position:absolute;
+	top:5%;
+	right:5%;
+	font-size:20pt;
+	font-family:gothammedium;
+}
+.picBigFull span{
+	cursor:pointer;
+	color:rgb(240, 255, 240);
+	position:absolute;
+	top:5%;
+	right:5%;
+	font-size:20pt;
+	font-family:gothammedium;
+}
