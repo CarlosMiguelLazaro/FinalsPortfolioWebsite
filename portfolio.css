@@ -78,7 +78,7 @@ table {
     cursor: pointer;
 }
 .big-poster {
-    max-width: 65%;
+    width: 65%;
     transition:border-radius 0.25s;
     cursor: pointer;
 }
